@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import styles from "@/app/components/home.module.css";
 import Thumbnail from "@/app/components/thumbnail";
 import { itemImages } from "@/app/lib/items";
+import ItemType from "@/app/lib/types/item";
 import React from "react";
 
 const Home = ({ items }) => {
@@ -19,16 +20,7 @@ const Home = ({ items }) => {
 };
 
 Home.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      itemId: PropTypes.string.isRequired,
-      imageId: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      description: PropTypes.string,
-      salesPrice: PropTypes.number,
-    })
-  ).isRequired,
+  items: PropTypes.arrayOf(ItemType).isRequired,
 };
 
 export default Home;
