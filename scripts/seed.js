@@ -4,7 +4,7 @@ const { items, orders } = require("../app/lib/data/placeholder-data.js");
 async function seedItems(client) {
   try {
     await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
-    // Create the "users" table if it doesn't exist
+    // Create the "items" table if it doesn't exist
     const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS items (
         id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
@@ -23,7 +23,7 @@ async function seedItems(client) {
     const insertedItems = await Promise.all(
       items.map(async (item) => {
         return client.sql`
-        INSERT INTO users (item_id, image_id, title, price, description, sale_price)
+        INSERT INTO items (item_id, image_id, title, price, description, sale_price)
         VALUES (${item.item_id}, ${item.image_id}, ${item.title}, ${item.price}, ${item.description}, ${item.sale_price})
         ON CONFLICT (id) DO NOTHING;
       `;
