@@ -1,32 +1,37 @@
 .thumbnail {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-decoration: none;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 .thumbnail div {
-    background-color: #f7f5f2;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
+  background-color: #f7f5f2;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
 }
 
 .thumbnail img {
-    height: 106px;
-    width: 106px;
+  height: 106px;
+  width: 106px;
+  transition: transform 333ms ease;
 }
 
 .thumbnail p {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 9px 0 0;
-    font-size: 21px;
-    text-align: center;
-    white-space: nowrap;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 9px 0 0;
+  font-size: 21px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.2);
 }

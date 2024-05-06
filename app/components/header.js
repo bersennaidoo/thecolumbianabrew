@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Image src="/images/logo.png" width={64} height={64} alt="coffee logo" />
-      <h1>The Columbiana Brew</h1>
+      <h1>The Colombiana Brew</h1>
     </header>
   );
 };

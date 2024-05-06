@@ -6,7 +6,7 @@ import { items } from "@/app/lib/items";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
       <Home items={items} />
     </div>
