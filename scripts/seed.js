@@ -13,7 +13,7 @@ async function seedItems(client) {
         title  VARCHAR(255),
         price DECIMAL(12,2),
         description VARCHAR(255),
-        sale_price DECIMAL(12,2),
+        sale_price DECIMAL(12,2)
       );
     `;
 
@@ -53,7 +53,7 @@ async function seedOrders(client) {
     name VARCHAR(255),
     phone VARCHAR(255),
     zip_code VARCHAR(255),
-    item_id VARCHAR(255),
+    item_id VARCHAR(255)
   );
 `;
 
