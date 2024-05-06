@@ -24,7 +24,7 @@ async function seedItems(client) {
       items.map(async (item) => {
         return client.sql`
         INSERT INTO items (item_id, image_id, title, price, description, sale_price)
-        VALUES (${item.item_id}, ${item.image_id}, ${item.title}, ${item.price}, ${item.description}, ${item.sale_price})
+        VALUES (${item.itemId}, ${item.imageId}, ${item.title}, ${item.price}, ${item.description}, ${item.salePrice})
         ON CONFLICT (id) DO NOTHING;
       `;
       })
@@ -37,7 +37,7 @@ async function seedItems(client) {
       items: insertedItems,
     };
   } catch (error) {
-    console.error("Error seeding users:", error);
+    console.error("Error seeding items:", error);
     throw error;
   }
 }
@@ -64,7 +64,7 @@ async function seedOrders(client) {
       orders.map(
         (order) => client.sql`
         INSERT INTO orders (name, phone, zip_code)
-        VALUES (${order.name}, ${order.phone}, ${order.zip_code})
+        VALUES (${order.name}, ${order.phone}, ${order.zipCode})
         ON CONFLICT (id) DO NOTHING;
       `
       )
