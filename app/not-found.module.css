@@ -1,0 +1,11 @@
+.notfound {
+    padding: 20px;
+}
+
+.notfound h2 {
+    margin-top: 0;
+}
+
+.notfound a {
+    color: #674836;
+}

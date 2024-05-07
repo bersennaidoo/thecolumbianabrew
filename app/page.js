@@ -9,7 +9,6 @@ export default async function LandingPage() {
   const items = await fetchItems();
   return (
     <div className={styles.container}>
-      <Header />
       <Home items={items} />
     </div>
   );
