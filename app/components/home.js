@@ -10,8 +10,8 @@ const Home = ({ items }) => {
     <div className={styles.home}>
       {items.map((item) => (
         <Thumbnail
-          key={item.itemId}
-          image={itemImages[item.imageId]}
+          key={item.item_id}
+          image={itemImages[item.image_id]}
           title={item.title}
         />
       ))}
