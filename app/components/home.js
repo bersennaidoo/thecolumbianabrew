@@ -13,6 +13,7 @@ const Home = ({ items }) => {
           key={item.item_id}
           image={itemImages[item.image_id]}
           title={item.title}
+          itemId={item.item_id}
         />
       ))}
     </div>
