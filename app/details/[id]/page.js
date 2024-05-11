@@ -1,12 +1,13 @@
 import DetailItem from "@/app/components/detailitem";
 //import { items } from "@/app/lib/items";
-import { fetchItems } from "@/app/lib/data/repo";
+import { fetchItemById } from "@/app/lib/data/repo";
 
 export default async function DetailItemPage({ params }) {
-  //const items = await fetchItems();
+  const item = await fetchItemById(params.id);
+  console.log(item)
   return (
     <div>
-      <DetailItem params={params}/>
+      <DetailItem item={item} />
     </div>
   );
 }

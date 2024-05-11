@@ -8,7 +8,7 @@ const Header = () => {
     <header className={styles.header}>
       <Link href="/">
         <Image
-          src="/images/logo.png"
+          src="/images/logo.svg"
           width={64}
           height={64}
           alt="coffee logo"

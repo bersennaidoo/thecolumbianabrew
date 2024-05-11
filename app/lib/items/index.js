@@ -1,14 +1,14 @@
 export const itemImages = {
   coffee: "/images/coffee.svg",
-  cookie: "/images/cookie.png",
-  croissant: "/images/croissant.png",
-  cupcake: "/images/cupcake.png",
-  "french-press": "/images/french-press.png",
-  "iced-coffee": "/images/iced-coffee.png",
-  latte: "/images/latte.png",
-  milk: "/images/milk.png",
-  sandwich: "/images/sandwich.png",
-  tea: "/images/tea.png",
+  cookie: "/images/cookie.svg",
+  croissant: "/images/croissant.svg",
+  cupcake: "/images/cupcake.svg",
+  "french-press": "/images/french-press.svg",
+  "iced-coffee": "/images/iced-coffee.svg",
+  latte: "/images/latte.svg",
+  milk: "/images/milk.svg",
+  sandwich: "/images/sandwich.svg",
+  tea: "/images/tea.svg",
 };
 
 export const items = [
